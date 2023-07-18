@@ -1,0 +1,23 @@
+<h1>
+  <%= @calc.split.each(&:capitalize!).join(" ") %> Results
+</h1>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%= @number %>
+  </dd>
+
+  <dt>
+    <%= @calc.split.each(&:capitalize!).join(" ") %>
+  </dt>
+  <dd>
+    <%= @result %>
+  </dd>
+</dl>
+
+<a href="/<%= @calc %>/new">
+  Calculate another <%= @calc %>
+</a>

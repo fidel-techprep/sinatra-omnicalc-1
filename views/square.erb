@@ -1,0 +1,10 @@
+<form action="/<%= @calc.gsub(" ", "_") %>/results">
+  <div>
+    <label for="number_input">
+      Enter a number
+    </label>
+
+    <input id="number_input" type="text" name="number" placeholder="Enter your number here">
+  </div>
+  <button>Calculate <%= @calc %></button>
+</form>
